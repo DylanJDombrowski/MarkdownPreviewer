@@ -2,15 +2,6 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 a {
@@ -65,4 +56,46 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+/* Ensure the editor and previewer take up the full height */
+.editor-container,
+.preview-container {
+  height: 100%;
+  overflow: auto; /* Add scrolling if content is longer than the viewport */
+}
+
+/* Editor styles */
+.editor-container {
+  padding: 20px;
+  border-right: 1px solid #ddd; /* Add a border between editor and previewer */
+}
+
+/* Preview styles */
+.preview-container {
+  padding: 20px;
+  background-color: #f8f8f8; /* Light background for the previewer */
+}
+
+/* You can add more styles here as needed */
+
+.editor-textarea {
+  width: 100%;
+  min-height: 150px;
+  font-family: monospace;
+}
+
+.markdown-preview {
+  padding: 10px;
+}
+.markdown-editor {
+  width: 100%;
+  height: 300px;
+  min-width: 300px; /* Adjust this value as needed */
+  min-height: 150px;
+  font-family: monospace;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
