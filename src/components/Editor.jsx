@@ -3,7 +3,9 @@ import PropTypes from "prop-types";
 function Editor({ markdown, setMarkdown }) {
   return (
     <div className="editor-container d-flex flex-column align-items-center vh-100">
-      <label htmlFor="editor">Markdown Input</label>
+      <label htmlFor="editor">
+        <h2>Markdown Input</h2>
+      </label>
       <textarea
         id="editor"
         className="markdown-editor"

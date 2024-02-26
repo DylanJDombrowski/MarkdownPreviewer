@@ -48,12 +48,14 @@ function App() {
   const [markdown, setMarkdown] = useState(initialMarkdown); // initialMarkdown contains default markdown text
 
   return (
-    <div className="App justify-content-center align-items-center">
+    <div className="App shell">
+      <h1 className="text-center">Dylan&apos;s Markdown Previewer</h1>
+      <div className="divider"></div>
       <div className="row">
-        <div className="col-md-4 ">
+        <div className="col-md-6 ">
           <Editor markdown={markdown} setMarkdown={setMarkdown} />
         </div>
-        <div className="col-md-8 ">
+        <div className="col-md-6 ">
           <Preview markdown={markdown} />
         </div>
       </div>
